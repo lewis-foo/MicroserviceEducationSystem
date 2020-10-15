@@ -1,0 +1,20 @@
+{
+    "database": {
+        "host": "code-curate-cluster-xfpwd.mongodb.net",
+        "name": "codeCurateDB",
+        "username": "dbAdmin",
+        "password": "2gzhomBjO42CmxeK",
+        "options": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    },
+    "loggly": {
+        "token": "33f0cb59-bfb5-4bb6-bb5c-223162768eed",
+        "subdomain": "codecurate",
+        "tags": [
+            "authorisation"
+        ],
+        "json": true
+    }
+}

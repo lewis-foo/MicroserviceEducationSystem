@@ -1,0 +1,1 @@
+{"version":3,"file":"course.js","sourceRoot":"","sources":["../../../src/model/schemas/course.ts"],"names":[],"mappings":";;;;;AAAA,wDAA+B;AAE/B,MAAM,YAAY,GAAG,IAAI,kBAAQ,CAAC,MAAM,CAAC;IACvC,IAAI,EAAE,MAAM;IACZ,WAAW,EAAE,MAAM;IACnB,KAAK,EAAE,MAAM;IACb,IAAI,EAAE,EAAE;IACR,kBAAkB,EAAE,EAAE;IACtB,OAAO,EAAE,EAAE;IACX,UAAU,EAAE,EAAE;IACd,cAAc,EAAE,EAAE;CACnB,CAAC,CAAA;AAEO,oCAAY"}

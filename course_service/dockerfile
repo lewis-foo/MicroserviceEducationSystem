@@ -1,0 +1,22 @@
+#Get current version of node and set as base image
+FROM node:current-alpine
+# Add a non-root user for security
+ENV HOME=/home/
+# Copy over package.json
+COPY package.json $HOME/app/
+
+#Switch working directory
+WORKDIR $HOME/app
+# Set file permisions and install dependencies
+RUN npm install --silent --progress=false --production
+
+
+
+EXPOSE 8000
+copy tsconfig.json $HOME/app/
+# Copy over source code
+COPY src/ $HOME/app/src
+copy config/ $HOME/app/config
+RUN npm run-script build
+
+CMD ["npm", "start"]

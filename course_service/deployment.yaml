@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: course-service-deployment
+spec:
+  selector:
+    matchLabels:
+      app: course-service
+  replicas: 2
+  template:
+    metadata:
+      labels: # labels to select/identify the deployment
+        app: course-service
+    spec: # pod spec
+      containers:
+        - name: course-service
+          image: thefoothing/codecurate:course_service # image we pushed
+          ports:
+            - containerPort: 3000

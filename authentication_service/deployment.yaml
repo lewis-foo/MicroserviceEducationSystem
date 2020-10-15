@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authentication-service-deployment
+spec:
+  selector:
+    matchLabels:
+      app: authentication-service
+  replicas: 2
+  template:
+    metadata:
+      labels: # labels to select/identify the deployment
+        app: authentication-service
+    spec: # pod spec
+      containers:
+        - name: authenication-service
+          image: thefoothing/codecurate:authentication_service # image we pushed
+          ports:
+            - containerPort: 3000
